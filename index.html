@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        .gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: rgb(0, 132, 255);
+            color: white;
+            width: 160px;
+            height: 40px;
+            border: none;
+            margin-top: 15px;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Latest Entries</h3>
+    <main>
+        <div class="gallery">
+            <div>
+                <img src="grid1.jpg" alt="">
+                <p>TIPS FOR SAVING MONEY IN YOUR NEXT TRAVEL</p>
+                <p>PUBLISHED ON: <a href="">JULY 19TH,2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+            <div>
+                <img src="grid2.jpg" alt="">
+                <p>THE COMPLETE GUIDE FOR TRAVELLING</p>
+                <p>PUBLISHED ON <a href="">JULY 19TH.2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+            <div>
+                <img src="grid3.jpg" alt="">
+                <p>ULTIMATE GUIDE TO TAKE THE BEST PICTURES</p>
+                <p>PUBLISHED ON <a href="">JULY 19TH.2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+            <div>
+                <img src="grid4.jpg" alt="">
+                <p>CHECKLIST FOR YOUR NEXT TRAVEL</p>
+                <p>PUBLISHED ON <a href="">JULY 19TH.2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+            <div>
+                <img src="grid5.jpg" alt="">
+                <p>BEST PLACES TO VISIT NEXT AUTUMN</p>
+                <p>PUBLISHED ON <a href="">JULY 19TH.2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+            <div>
+                <img src="grid6.jpg" alt="">
+                <p>BEST PLACES TO VISIT WITH MOUNTAIN</p>
+                <p>PUBLISHED ON <a href="">JULY 19TH.2019</a></p>
+                <p>BY: <a href="">THE TRAVEL BLOG</a></p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
